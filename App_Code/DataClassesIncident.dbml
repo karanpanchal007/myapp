@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="project man" Class="DataClassesIncidentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=KARAN\KARAN;Initial Catalog=&quot;project man&quot;;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="project manConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Incident" Member="Incidents">
+    <Type Name="Incident">
+      <Column Name="Titel_Inc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Requester" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Incident_On" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="[Level]" Member="Level" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Start_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Due_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Estimated_Hour" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Project" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Inc_complited" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Engineer_Ids" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Assigned_To" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Testing_Team" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[New Action]" Member="New_Action" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
